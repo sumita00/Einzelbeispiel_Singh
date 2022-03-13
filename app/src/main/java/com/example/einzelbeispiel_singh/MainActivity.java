@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         martikelNr = (TextView) findViewById(R.id.editTextTextPersonName2);
-        antwortFromServer = (TextView) findViewById(R.id.editTextTextPersonName2);
+        antwortFromServer = (TextView) findViewById(R.id.textView);
         berechnungresult = (TextView) findViewById(R.id.editTextTextPersonName2);
         sendButton = (Button) findViewById(R.id.button3);
         sendButton.setOnClickListener(this);
