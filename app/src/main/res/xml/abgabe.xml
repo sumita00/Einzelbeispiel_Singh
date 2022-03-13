@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <person> <name>Sumita Singh</name>
+        <matrikelnummer>11904711</matrikelnummer>
+        <lastcommithash>7b401ec625a5dc84bb9f1ca0be4b4dc979c39956</lastcommithash>
+        <githubusername>sumita00</githubusername>
+        <repositoryname>Einzelbeispiel_Singh</repositoryname>
+        <repositoryurl>https://github.com/sumita00/Einzelbeispiel_Singh.git</repositoryurl>
+    </person>
+
+</PreferenceScreen>
