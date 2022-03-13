@@ -44,11 +44,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        martikelNr = (TextView) findViewById(R.id.editTextTextPersonName2);
-        antwortFromServer = (TextView) findViewById(R.id.textView);
-        berechnungresult = (TextView) findViewById(R.id.editTextTextPersonName2);
+        martikelNr = (TextView) findViewById(R.id.matrikelNr);
+        antwortFromServer = (TextView) findViewById(R.id.antwortFromServer);
+        berechnungresult = (TextView) findViewById(R.id.berechnungresult);
         sendButton = (Button) findViewById(R.id.button3);
         sendButton.setOnClickListener(this);
+    }
+
+    public ArrayList<Integer> getMartikelNrZiffern(String martikelnummer){
+        ArrayList<Integer> integerMartikelNr = new ArrayList<>();
+
+        for(int i = 0; i < martikelnummer.length(); i++){
+            integerMartikelNr.add(Integer.parseInt(Character.toString(martikelnummer.charAt(i))));
+        }
+
+        return integerMartikelNr;
     }
 
     @Override
